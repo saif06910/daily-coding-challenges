@@ -98,5 +98,5 @@ class Solution(object):
         
         # For odd length numbers: x should equal reversed_half // 10
         # Example: 12321 -> x=12, reversed_half=123 -> 12 == 123//10 
-        # (we ignore the middle digit by dividing reversed_half by 10)
+        # (we ignore/chop off the last digit by dividing reversed_half by 10)
         return x == reversed_half or x == reversed_half // 10
